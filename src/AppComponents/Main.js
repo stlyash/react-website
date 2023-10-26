@@ -6,6 +6,9 @@ import {Home} from './MainComponents/Home.js'
 import {Internships} from './MainComponents/Internships.js'
 import {Projects} from './MainComponents/Projects.js'
 import {Resume} from './MainComponents/Resume.js'
+
+
+
 export const Main = () => {
   return (
     <div>
