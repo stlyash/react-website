@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-
+import cover from './asdf.jpg'; // Adjust the path as needed
 export const Home = () => {
   const salTransx = 24;
   const imgRef = useRef(null);
@@ -20,7 +20,6 @@ export const Home = () => {
       salRef.current.style.backgroundColor = 'rgba(0, 0, 0, 0.3)';
     }
   };
-
   return (
     <div>
       <article
@@ -33,8 +32,8 @@ export const Home = () => {
           ref={imgRef}
           id="cover-image"
           style={{ transition: 'transform 4s ease' }}
-          src="asdf.jpg"
-          alt="Cover Image"
+          src={cover}
+          alt="Cover"
         />
         <span className="material-symbols-outlined">
           <a href="#experiences-section">

@@ -40,7 +40,7 @@ export const Footer = () => {
         </div>
         <div style={{ height: "1px", backgroundColor: "rgb(148, 168, 223)" }}></div>
         <span style={{ textAlign: "center", margin: "2%" }}>
-          <a target='_blank' style={{ color: "white" }} href="https://github.com/stlyash/personal-web/blob/main/LICENSE">
+          <a rel="noopener noreferrer" target='_blank' style={{ color: "white" }} href="https://github.com/stlyash/personal-web/blob/main/LICENSE">
             Copyright © 2023 Yashasvi
           </a>
         </span>

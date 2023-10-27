@@ -41,7 +41,7 @@ export const Resume = () => {
         <div style={{paddingLeft:"10%", paddingRight:"10%",paddingTop:"6%",paddingBottom:"4%"}}>
     <h2 id="resume-section" className="text-primary unselect"style={{paddingBottom:"2%"}}>Resume</h2>
 
-      <iframe id="res" 
+      <iframe id="res" title="Resume"
       src="https://drive.google.com/file/d/1oPHBR7crOcbPcvlmqdAeCYk6LepS2qa9BB-LuHM5ijI/preview" 
       width="100%" height="1120" allow="autoplay"></iframe>
 

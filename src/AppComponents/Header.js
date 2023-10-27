@@ -108,7 +108,7 @@ window.addEventListener('scroll', function() {
 export const Header = () => {
   return (
     <div>
-      <nav id="nav-bar" style={{ backgroundColor: "rgb(0, 123, 191)" }} className="navbar navbar-expand-lg fixed-top">
+      <nav id="nav-bar" style={{zIndex: '100', backgroundColor: "rgb(0, 123, 191)" }} className="navbar navbar-expand-lg fixed-top">
         <div className="container-fluid">
           <a style={{ color: "white", fontSize: "x-large" }} className="navbar-brand" href="#"><h1 style={{ fontSize: "x-large" }}>Yashasvi</h1></a>
           <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">

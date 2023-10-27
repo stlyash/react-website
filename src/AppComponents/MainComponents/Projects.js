@@ -73,7 +73,7 @@ export const Projects = () => {
                             <li>Used: Google Colab, Python, Spacy, Pandas</li>
                           </ul>
                         </p>
-                        [<a href="https://github.com/stlyash/spacyResumeParcer" target="_blank">Link to GitHub</a>]
+                        [<a rel="noopener noreferrer" href="https://github.com/stlyash/spacyResumeParcer" target="_blank">Link to GitHub</a>]
                       </div>
                     </div>
                   </div>
@@ -103,7 +103,7 @@ export const Projects = () => {
                             <li>Created using Google Chart API, HTML, CSS, JavaScript</li>
                           </ul>
                         </p>
-                        [<a href="https://stlyash.github.io/Driving/" target="_blank">Link to GitHub</a>]
+                        [<a rel="noopener noreferrer" href="https://stlyash.github.io/Driving/" target="_blank">Link to GitHub</a>]
                       </div>
                     </div>
                   </div>
@@ -132,7 +132,7 @@ export const Projects = () => {
                             <li>Created on MIT App Inventor</li>
                           </ul>
                         </p>
-                        [<a href="https://play.google.com/store/apps/details?id=appinventor.ai_kmryashasvi.MatrixMan" target="_blank">Link to Play Store</a>]
+                        [<a rel="noopener noreferrer" href="https://play.google.com/store/apps/details?id=appinventor.ai_kmryashasvi.MatrixMan" target="_blank">Link to Play Store</a>]
                       </div>
                     </div>
                   </div>
@@ -160,7 +160,7 @@ export const Projects = () => {
                             <li>Created on MIT App Inventor</li>
                           </ul>
                         </p>
-                        [<a href="https://play.google.com/store/apps/details?id=appinventor.ai_kmryashasvi.stlcpp" target="_blank">Link to Play Store</a>]
+                        [<a href="https://play.google.com/store/apps/details?id=appinventor.ai_kmryashasvi.stlcpp" target="_blank"  rel="noopener noreferrer">Link to Play Store</a>]
                       </div>
                     </div>
                   </div>
