@@ -44,7 +44,7 @@ export const Home = () => {
         <div
           ref={salRef}
           id="salutation"
-          className="text-overlay unselect"
+          className="text-overlay"
           style={{
             padding: '20px',
             borderRadius: '30px',

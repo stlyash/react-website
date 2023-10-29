@@ -9,7 +9,7 @@ export const ContactMe = () => {
   return (
     <div id="connect">
       <div style={{ paddingLeft: "10%", paddingRight: "10%", paddingTop: "6%", paddingBottom: "4%" }}>
-        <h2 id="connect-section" className="text-primary unselect" style={{ paddingBottom: "2%" }}>Contact Me</h2>
+        <h2 id="connect-section" className="text-primary" style={{ paddingBottom: "2%" }}>Contact Me</h2>
 
         <div className="row">
           <div className="col-sm-12 col-lg-6">

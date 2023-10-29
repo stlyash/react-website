@@ -11,5 +11,10 @@ export const Loading = props => {
     </div>
   );
 }
-
-Loading.propTypes = {Boolean}
+Loading.defaultProps = {
+  isVisible:false
+}
+Loading.propTypes = {
+  isVisible:PropTypes.bool
+  // We can also use: isVisible:PropTypes.bool.isRequired to make the prop mandatory
+}

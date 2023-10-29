@@ -15,7 +15,7 @@ export const Footer = () => {
 
   return (
     <div>
-      <div className="row" style={{ color:"white",alignItems: "center",backgroundColor: "rgb(0, 123, 191)" }}>
+      <div className="row" style={{ color:"white",alignItems: "center",backgroundColor: "rgb(66, 135, 245)" }}>
         <div className="col firstrow" style={{ margin: "3%" }}>
           <img id="sign" alt="Signature of Yashasvi" src={"./footer_assets/signature.png"} />
         </div>
@@ -40,8 +40,8 @@ export const Footer = () => {
         </div>
         <div style={{ height: "1px", backgroundColor: "rgb(148, 168, 223)" }}></div>
         <span style={{ textAlign: "center", margin: "2%" }}>
-          <a rel="noopener noreferrer" target='_blank' style={{ color: "white" }} href="https://github.com/stlyash/personal-web/blob/main/LICENSE">
-            Copyright © 2023 Yashasvi
+          <a rel="noopener noreferrer" target='_blank' style={{ color: "white" }} href="https://github.com/stlyash/https://github.com/stlyash/react-website">
+            <strike>Copyright © 2023 Yashasvi</strike>😂
           </a>
         </span>
       </div>

@@ -12,7 +12,7 @@ function App() {
     // Simulate loading
     setTimeout(() => {
       setIsLoading(false);
-    }, 3000); // Set the timeout to 3 seconds (adjust as needed)
+    }, 1); // Set the timeout to 3 seconds (adjust as needed)
   }, []); // Use an empty dependency array to run this effect only once
 
   return (

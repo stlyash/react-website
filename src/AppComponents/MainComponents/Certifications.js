@@ -9,7 +9,7 @@ export const Certifications = () => {
   return (
     <div>
       <article id="whole-certifications">
-    <h2 id="certs-section"style={{paddingLeft: "10%",paddingRight: "10%",paddingTop:"6%"}}className="text-primary unselect">Certifications</h2>
+    <h2 id="certs-section"style={{paddingLeft: "10%",paddingRight: "10%",paddingTop:"6%"}}className="text-primary">Certifications</h2>
     <div style={{paddingLeft: "10%",paddingRight: "10%",paddingTop:"2%"}}>
       <div style={{paddingBottom: "2%"}}>
         <div id="front-end" className="card spcard" >

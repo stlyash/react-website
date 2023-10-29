@@ -34,8 +34,8 @@ window.addEventListener('scroll', function() {
 export const Internships = () => {
   return (
     <div id="whole-experience">
-       <h2 id="experiences-section" style={{paddingLeft: "10%",paddingRight: "10%",paddingTop:"6%"}}className="text-primary unselect">Experience</h2>
-  <article className="unselect" style={{paddingLeft: "10%",paddingRight: "10%",paddingTop:"2%"}}id="whole-experience">
+       <h2 id="experiences-section" style={{paddingLeft: "10%",paddingRight: "10%",paddingTop:"6%"}}className="text-primary">Experience</h2>
+  <article style={{paddingLeft: "10%",paddingRight: "10%",paddingTop:"2%"}}id="whole-experience">
     <div  style={{paddingBottom:"2%"}}>
             
       <div className="scroll-container">

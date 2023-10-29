@@ -3,7 +3,7 @@ import React from 'react'
 const Article = (props) => {
   return (
     <div style={{ paddingLeft: '10%', paddingRight: '10%', paddingTop: '2%' }}>
-      <div className="card educard unselect">
+      <div className="card educard">
         <div className="card-body">
           <h4 className="card-title">{props.title}</h4>
           <h6 className="card-subtitle mb-2 text-body-secondary">{props.subtitle}</h6>
