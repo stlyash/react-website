@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/react-website/static/css/main.8d99ca65.css",
+    "main.js": "/react-website/static/js/main.9a38001d.js",
+    "static/js/787.7efd31bd.chunk.js": "/react-website/static/js/787.7efd31bd.chunk.js",
+    "static/media/asdf.jpg": "/react-website/static/media/asdf.96c21dcd237870d9708b.jpg",
+    "static/media/leetcode_logo.png": "/react-website/static/media/leetcode_logo.c79f333b12595d3eec8f.png",
+    "static/media/play_store_logo.png": "/react-website/static/media/play_store_logo.a53e31a0b7f3f08f2282.png",
+    "static/media/new-react.png": "/react-website/static/media/new-react.da9033beef76bc55f270.png",
+    "static/media/new-driving.png": "/react-website/static/media/new-driving.74c1f45622e7f1d13770.png",
+    "static/media/stl-prime.png": "/react-website/static/media/stl-prime.efc49e888938ca5db134.png",
+    "static/media/codechef_logo.png": "/react-website/static/media/codechef_logo.cb20c19292ab07021a71.png",
+    "index.html": "/react-website/index.html",
+    "main.8d99ca65.css.map": "/react-website/static/css/main.8d99ca65.css.map",
+    "main.9a38001d.js.map": "/react-website/static/js/main.9a38001d.js.map",
+    "787.7efd31bd.chunk.js.map": "/react-website/static/js/787.7efd31bd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8d99ca65.css",
+    "static/js/main.9a38001d.js"
+  ]
+}
