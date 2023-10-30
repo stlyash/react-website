@@ -6,7 +6,6 @@ import { Loading } from './AppComponents/Loading.js';
 import './App.css';
 import {
   BrowserRouter as Router,
-  Route,
 } from "react-router-dom";
 
 function App() {
@@ -16,7 +15,7 @@ function App() {
     // Simulate loading
     setTimeout(() => {
       setIsLoading(false);
-    }, 1); // Set the timeout to 3 seconds (adjust as needed)
+    }, 3000); // Set the timeout to 3 seconds (adjust as needed)
   }, []); // Use an empty dependency array to run this effect only once
 
   return (
@@ -26,6 +25,7 @@ function App() {
           <Main />
           <Footer />
     </Router>
+    //npm run deploy
   );
 }
 

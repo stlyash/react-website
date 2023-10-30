@@ -15,20 +15,20 @@ export const Home = () => {
     }
   };
 
-  const zoomoInd = () => {
+  /*const zoomoInd = () => {
     if (imgRef.current && salRef.current) {
       imgRef.current.style.transform = 'scale(1)';
       salRef.current.style.transform = `scale(1) translate(${salTransx - 24}%, 0%)`;
       salRef.current.style.backgroundColor = 'rgba(0, 0, 0, 0.3)';
     }
-  };
+  };*/
   return (
     <div>
       <article
         id="home-article"
         style={{ overflow: 'hidden' }}
         onMouseOver={zoomInd}
-        onMouseOut={zoomoInd}
+        /*onMouseOut={zoomoInd}*/
       >
         <img
           ref={imgRef}

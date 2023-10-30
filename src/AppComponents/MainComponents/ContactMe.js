@@ -3,8 +3,8 @@ import { ContactForm } from './ContactComponents/ContactForm';
 import { MessageSubmitted } from './ContactComponents/MessageSubmitted';
 import codeLogo from './main_assets/contactme_assets/codechef_logo.png'
 import ghLogo from './main_assets/contactme_assets/github_logo.png'
-import greentick from './main_assets/contactme_assets/greentick.png'
-import hearthlogo from './main_assets/contactme_assets/hackerearth_logo.png'
+//import greentick from './main_assets/contactme_assets/greentick.png'
+//import hearthlogo from './main_assets/contactme_assets/hackerearth_logo.png'
 import hranklogo from './main_assets/contactme_assets/hackerrank_logo.png'
 import lcodeLogo from './main_assets/contactme_assets/leetcode_logo.png'
 import linkedlogo from './main_assets/contactme_assets/linkedin_logo.png'

@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from "react-router-dom";
 // Making the nav bar names bold on scroll
 var collapsed = 0;
 // Script for bolding the navbar text when corresponding part is scrolled on
@@ -84,7 +85,7 @@ window.addEventListener('scroll', function() {
       navInd.style.fontWeight = "bold";
   
       
-      if(collapsed==0)
+      if(collapsed===0)
       {
       // Code to expand the first collapsible automatically
       // Function to expand the collapsible element
@@ -106,11 +107,23 @@ window.addEventListener('scroll', function() {
   });
 
 export const Header = () => {
+  const scrollToTarget = (elementId) => {
+    const targetElement = document.getElementById(elementId);
+
+    if (targetElement) {
+      const elementPosition = targetElement.getBoundingClientRect();
+      window.scrollTo({
+        top: elementPosition.top + window.scrollY,
+        behavior: 'smooth',
+      });
+    }
+  };
+
   return (
     <div>
       <nav id="nav-bar" style={{zIndex: '100', backgroundColor: "rgb(66, 135, 245)" }} className="navbar navbar-expand-lg fixed-top">
         <div className="container-fluid">
-          <a style={{ color: "white", fontSize: "x-large" }} className="navbar-brand" href="#"><h1 style={{ fontSize: "x-large" }}>Yashasvi</h1></a>
+          <Link style={{ color: "white", fontSize: "x-large" }} className="navbar-brand" href="#"><h1 style={{ fontSize: "x-large" }}>Yashasvi</h1></Link>
           <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
@@ -121,39 +134,39 @@ export const Header = () => {
             <div className="offcanvas-body">
               <ul style={{ fontSize: "large" }} className="navbar-nav justify-content-end flex-grow-1 pe-3">
                 <li className="nav-item">
-                  <a href="#" id="nav-home" style={{ color: "white" }} className="nav-link active btn" aria-current="page">
+                  <Link onClick={()=>scrollToTarget("cover-image")} id="nav-home" style={{ color: "white" }} className="nav-link active btn" aria-current="page">
                     Home
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a href="#experiences-section" id="nav-exp" style={{ color: "white" }} className="nav-link active btn" aria-current="page">
+                  <Link onClick={()=>scrollToTarget("experiences-section")} id="nav-exp" style={{ color: "white" }} className="nav-link active btn" aria-current="page">
                     Experience
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a href="#whole-certifications" id="nav-cert" style={{ color: "white" }} className="nav-link active btn" aria-current="page">
+                  <Link onClick={()=>scrollToTarget("whole-certifications")} id="nav-cert" style={{ color: "white" }} className="nav-link active btn" aria-current="page">
                     Certifications
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a href="#all-educations" id="nav-edu" style={{ color: "white" }} className="nav-link active btn" aria-current="page">
+                  <Link onClick={()=>scrollToTarget("all-educations")} id="nav-edu" style={{ color: "white" }} className="nav-link active btn" aria-current="page">
                     Education
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a href="#project-section" id="nav-project" style={{ color: "white" }} className="nav-link active btn" aria-current="page">
+                  <Link onClick={()=>scrollToTarget("project-section")} id="nav-project" style={{ color: "white" }} className="nav-link active btn" aria-current="page">
                     Projects
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a href="#a-resume" id="nav-resume" style={{ color: "white" }} className="nav-link active btn" aria-current="page">
+                  <Link onClick={()=>scrollToTarget("a-resume")} id="nav-resume" style={{ color: "white" }} className="nav-link active btn" aria-current="page">
                     Resume
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a href="#connect" id="nav-contact" style={{ color: "white" }} className="nav-link active btn" aria-current="page">
+                  <Link onClick={()=>scrollToTarget("connect")} id="nav-contact" style={{ color: "white" }} className="nav-link active btn btn-link" aria-current="page">
                     Connect With Me
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
