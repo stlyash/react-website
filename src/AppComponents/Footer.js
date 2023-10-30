@@ -1,23 +1,26 @@
 
 import React, { useState } from 'react';
+import {Link} from "react-router-dom";
+import copyim from './footer_assets/copy.png';
+import doneim from './footer_assets/done.png';
+import sign from './footer_assets/signature.png';
 
 export const Footer = () => {
-  const [emailCopyStatus, setEmailCopyStatus] = useState('copy');
-  const [phoneCopyStatus, setPhoneCopyStatus] = useState('copy');
+  const [emailCopyStatus, setEmailCopyStatus] = useState(copyim);
+  const [phoneCopyStatus, setPhoneCopyStatus] = useState(copyim);
 
   const copyText = (text, setStatus) => {
     navigator.clipboard.writeText(text)
-      .then(() => setStatus('done'))
+      .then(() => setStatus(doneim))
       .catch(error => console.error('Copy failed:', error));
-
-    setTimeout(() => setStatus('copy'), 3000);
+    setTimeout(() => setStatus(copyim), 3000);
   };
 
   return (
     <div>
       <div className="row" style={{ color:"white",alignItems: "center",backgroundColor: "rgb(66, 135, 245)" }}>
         <div className="col firstrow" style={{ margin: "3%" }}>
-          <img id="sign" alt="Signature of Yashasvi" src={"./footer_assets/signature.png"} />
+          <img id="sign" alt="Signature of Yashasvi" src={sign} />
         </div>
         
         <div className="col ctcme secrow" style={{ margin: "3%", textAlign: "center", marginRight: "20%" }}>
@@ -27,7 +30,7 @@ export const Footer = () => {
             onClick={() => copyText("yash@yashasvi.dev", setEmailCopyStatus)}
           >
             yash@yashasvi.dev
-            <img id="em-cpy" src={`footer_assets/${emailCopyStatus}.png`} alt="Copy Button" />
+            <img id="em-cpy" src={emailCopyStatus} alt="Copy Button" />
           </button>
           |  
           <button
@@ -35,14 +38,14 @@ export const Footer = () => {
             onClick={() => copyText("+91 8540904380", setPhoneCopyStatus)}
           >
             +91 8540904380
-            <img id="ph-cpy" src={`footer_assets/${phoneCopyStatus}.png`} alt="Copy Button" />
+            <img id="ph-cpy" src={phoneCopyStatus} alt="Copy Button" />
           </button>
         </div>
         <div style={{ height: "1px", backgroundColor: "rgb(148, 168, 223)" }}></div>
         <span style={{ textAlign: "center", margin: "2%" }}>
-          <a rel="noopener noreferrer" target='_blank' style={{ color: "white" }} href="https://github.com/stlyash/https://github.com/stlyash/react-website">
+          <Link rel="noopener noreferrer" target='_blank' style={{ color: "white" }} to="https://github.com/stlyash/https://github.com/stlyash/react-website">
             <strike>Copyright © 2023 Yashasvi</strike>😂
-          </a>
+          </Link>
         </span>
       </div>
     </div>

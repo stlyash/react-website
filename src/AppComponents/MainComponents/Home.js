@@ -1,5 +1,7 @@
 import React, { useRef } from 'react';
 import cover from './asdf.jpg'; // Adjust the path as needed
+import expand from './main_assets/expand-more.png'; // Adjust the path as needed
+import {Link} from "react-router-dom";
 export const Home = () => {
   const salTransx = 24;
   const imgRef = useRef(null);
@@ -36,9 +38,9 @@ export const Home = () => {
           alt="Cover"
         />
         <span className="material-symbols-outlined">
-          <a href="#experiences-section">
-            <img src="expand-more.png" alt="Down Arrow" />
-          </a>
+          <Link to="#experiences-section">
+            <img src={expand} alt="Down Arrow" />
+          </Link>
         </span>
 
         <div

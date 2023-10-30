@@ -4,6 +4,10 @@ import { Main } from './AppComponents/Main.js';
 import { Footer } from './AppComponents/Footer.js';
 import { Loading } from './AppComponents/Loading.js';
 import './App.css';
+import {
+  BrowserRouter as Router,
+  Route,
+} from "react-router-dom";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -16,14 +20,12 @@ function App() {
   }, []); // Use an empty dependency array to run this effect only once
 
   return (
-    <div className="App">
+    <Router>
         <Loading isVisible={isLoading} />
           <Header />
           <Main />
           <Footer />
-
-      
-    </div>
+    </Router>
   );
 }
 

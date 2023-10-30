@@ -1,10 +1,18 @@
 import React from 'react';
 import { ContactForm } from './ContactComponents/ContactForm';
 import { MessageSubmitted } from './ContactComponents/MessageSubmitted';
- 
+import codeLogo from './main_assets/contactme_assets/codechef_logo.png'
+import ghLogo from './main_assets/contactme_assets/github_logo.png'
+import greentick from './main_assets/contactme_assets/greentick.png'
+import hearthlogo from './main_assets/contactme_assets/hackerearth_logo.png'
+import hranklogo from './main_assets/contactme_assets/hackerrank_logo.png'
+import lcodeLogo from './main_assets/contactme_assets/leetcode_logo.png'
+import linkedlogo from './main_assets/contactme_assets/linkedin_logo.png'
+import pstoreLogo from './main_assets/contactme_assets/play_store_logo.png'
+import {Link} from "react-router-dom";
+
 
 export const ContactMe = () => {
-
 
   return (
     <div id="connect">
@@ -13,72 +21,63 @@ export const ContactMe = () => {
 
         <div className="row">
           <div className="col-sm-12 col-lg-6">
-                   <a href="https://play.google.com/store/apps/dev?id=6866879052780294015" 
+                   <Link to="https://play.google.com/store/apps/dev?id=6866879052780294015" 
         className="clicklinks" target="_blank" rel="noopener noreferrer">
         <div className="contact-links">
           <span className="clickables">
-          
-          <img id="logos" src="main_assets/play_store_logo.png" 
+          <img id="logos" src={pstoreLogo} 
           alt="Google Play Store Logo"/>
           Google Play Store 🔗</span>
-        </div></a>
+        </div></Link>
 
 
-        <a href="https://www.hackerrank.com/kumaryashasvi255" 
+        <Link to="https://www.hackerrank.com/kumaryashasvi255" 
         className="clicklinks" target="_blank" rel="noopener noreferrer">
         <div className="contact-links">
-          <span className="clickables">
-          
-            
-          <img id="logos" src="main_assets/hackerrank_logo.png" 
+          <span className="clickables"> 
+          <img id="logos" src={hranklogo} 
           alt="HackerRank Logo"/>
           HackerRank 🔗</span>
-        </div></a>   
+        </div></Link>   
 
 
-        <a href="https://www.codechef.com/users/kmryashasvi" 
+        <Link to="https://www.codechef.com/users/kmryashasvi" 
         className="clicklinks" target="_blank" rel="noopener noreferrer">
         <div className="contact-links">
           <span className="clickables">
-          
-          <img id="logos" src="main_assets/codechef_logo.png" 
+          <img id="logos" src={codeLogo}
           alt="Codechef Logo"/>
           CodeChef 🔗</span>
-        </div></a>
+        </div></Link>
 
 
-        <a href="https://leetcode.com/kmryashasvi/" 
+        <Link to="https://leetcode.com/kmryashasvi/" 
         className="clicklinks" target="_blank" rel="noopener noreferrer">
         <div className="contact-links">
           <span className="clickables">
-          
-          <img id="logos" src="main_assets/leetcode_logo.png" 
+          <img id="logos" src={lcodeLogo}
           alt="LeetCode Logo"/>
           LeetCode 🔗</span>
-        </div></a>
+        </div></Link>
 
 
-        <a href="https://www.linkedin.com/in/kmryashasvi/" 
+        <Link to="https://www.linkedin.com/in/kmryashasvi/" 
         className="clicklinks" target="_blank" rel="noopener noreferrer">  
         <div className="contact-links">
           <span className="clickables">
-          
-          <img id="logos" src="main_assets/linkedin_logo.png" 
+          <img id="logos" src={linkedlogo}
           alt="LinkedIn Logo"/>
           LinkedIn 🔗</span>
-        </div></a>
+        </div></Link>
 
-
-
-        <a href="https://github.com/stlyash" 
+        <Link to="https://github.com/stlyash" 
           className="clicklinks" target="_blank" rel="noopener noreferrer">
         <div className="contact-links">
           <span className="clickables">
-          
-          <img id="logos" src="main_assets/github_logo.png" 
+          <img id="logos" src={ghLogo}
           alt="Github Logo"/>
           GitHub 🔗</span>
-        </div></a>
+        </div></Link>
           </div>
 
 

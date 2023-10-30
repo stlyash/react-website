@@ -1,6 +1,7 @@
 import React from 'react'
 
-import PropTypes from 'prop-types'
+import PropTypes from 'prop-types';
+import {Link} from "react-router-dom";
 
 export const ProjectCards = props => {
 
@@ -12,10 +13,10 @@ export const ProjectCards = props => {
         <div className="card-body">
             <h5 className="card-title">{props.project.title}</h5>
             <p className="card-text">{props.project.desc}</p>
-            <a style={{fontSize:"0.9em"}} href={props.project.link} 
+            <Link style={{fontSize:"0.9em"}} to={props.project.link} 
             target='_blank' rel="noreferrer" className="btn  btn-outline-primary">
               Link 🔗
-              </a>
+              </Link>
         </div>
         </div>
     </div>
