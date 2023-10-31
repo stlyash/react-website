@@ -1,6 +1,5 @@
 import React from 'react';
-import { ContactForm } from './ContactComponents/ContactForm';
-import { MessageSubmitted } from './ContactComponents/MessageSubmitted';
+import './contactFormStyle.css';
 import codeLogo from './main_assets/contactme_assets/codechef_logo.png'
 import ghLogo from './main_assets/contactme_assets/github_logo.png'
 //import greentick from './main_assets/contactme_assets/greentick.png'
@@ -11,8 +10,22 @@ import linkedlogo from './main_assets/contactme_assets/linkedin_logo.png'
 import pstoreLogo from './main_assets/contactme_assets/play_store_logo.png'
 import {Link} from "react-router-dom";
 
-
 export const ContactMe = () => {
+
+  const ContactForm = (props) => {
+    return (
+      <div className='cbody col-sm-12 col-lg-6' style={{ display: props.isVisible }}>
+        <iframe
+          title="contact form"
+          width="100%"
+          style={{ height: "12cm" }}
+          id="contform"
+          src="https://stlyash.github.io/contact-me/"
+        ></iframe>
+      </div>
+    );
+  };
+
 
   return (
     <div id="connect">
@@ -81,8 +94,7 @@ export const ContactMe = () => {
           </div>
 
 
-          <ContactForm />
-          <MessageSubmitted />
+          <ContactForm/>
         </div>
       </div>
     </div>

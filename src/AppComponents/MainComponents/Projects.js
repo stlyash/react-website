@@ -121,7 +121,7 @@ export const Projects = () => {
           </div>
           <div className='col-4  myposter' onClick={()=>tabPressed("Android")}>
             <h4 style={{borderBottom: androidState ? "solid 1px rgb(63, 127, 231)" : "none",
-            borderLeft:"solid 1px gray",borderRight:"solid 1px gray",
+            borderLeft:"solid 1px rgb(63, 127, 231,0.2)",borderRight:"solid 1px rgb(63, 127, 231,0.2)",
             textAlign:"center",backgroundColor:`rgb(63, 127, 231,${androidState?0.2:0.1})`,
             paddingTop:"1em",paddingBottom:"1em"}}>Android</h4>
           </div>

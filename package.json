@@ -1,6 +1,6 @@
 {
-  "homepage": "https://stlyash.github.io/react-website/",
-  "version": "0.2.0",
+  "homepage": "https://www.yashasvi.dev/",
+  "version": "0.2.1",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",

@@ -43,8 +43,14 @@ export const Footer = () => {
         </div>
         <div style={{ height: "1px", backgroundColor: "rgb(148, 168, 223)" }}></div>
         <span style={{ textAlign: "center", margin: "2%" }}>
-          <Link rel="noopener noreferrer" target='_blank' style={{ color: "white" }} to="https://github.com/stlyash/https://github.com/stlyash/react-website">
+          <Link rel="noopener noreferrer" target='_blank' style={{ color: "white" }} to="https://github.com/stlyash/react-website">
             <strike>Copyright © 2023 Yashasvi</strike>😂
+          </Link>
+        </span>
+        <div style={{ height: "1px", backgroundColor: "rgb(148, 168, 223)" }}></div>
+        <span style={{ textAlign: "center", margin: "2%" }}>
+          <Link rel="noopener noreferrer" target='_blank' style={{ color: "white" }} to="https://stlyash.github.io/personal-web/">
+            Old Website (HTML,CSS,JS)
           </Link>
         </span>
       </div>

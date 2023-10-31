@@ -7,7 +7,7 @@ export const ProjectCards = props => {
 
   return (
     <div className='col-lg-4 col-md-12' style={{borderRadius:"0.5cm"}}>
-        <div className="card myposter" style={{margin:"0.5cm",backgroundColor:"#f2f2f2",
+        <div className="card myposter" style={{boxShadow: "0 0 10px rgba(0, 0, 0, 0.5)",margin:"0.5cm",backgroundColor:"rgb(63, 127, 231,0.1)",
         borderRadius:"0.5cm"}}>
         <img style={{borderRadius:"0.5cm 0.5cm 0.2cm 0.2cm"}} src={props.project.image} className="card-img-top" alt={props.project.title}/>
         <div className="card-body">
