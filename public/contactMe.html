@@ -187,34 +187,39 @@ button:active {
     </form>
     </div>
     <script>
-document.addEventListener("DOMContentLoaded", function() {
-  // Get the form and its elements
-  const form = document.getElementById("cform");
-  const emailInput = document.getElementById("text2");
-  const messageInput = document.getElementById("text4");
-  const submitButton = document.getElementById("send");
-  const formheading = document.getElementById("hvemsg")
-
-  // Add event listeners to the email and message inputs
-  emailInput.addEventListener("input", validateForm);
-  messageInput.addEventListener("input", validateForm);
-
-  // Function to check the form validity and enable/disable the submit button
-  function validateForm() {
-    if (emailInput.validity.valid && messageInput.validity.valid) {
-      submitButton.style.display = 'block';
-      formheading.style.display = 'none';
-    } else {
-      submitButton.style.display = 'none';
-      formheading.style.display = 'block';
-    }
-  }
-
-  // Initial validation check
-  validateForm();
-});
-     
-    </script>
+        document.addEventListener("DOMContentLoaded", function() {
+          // Get the form and its elements
+          const form = document.getElementById("cform");
+          const emailInput = document.getElementById("text2");
+          const messageInput = document.getElementById("text4");
+          const submitButton = document.getElementById("send");
+          const formheading = document.getElementById("hvemsg")
+        
+          // Add event listeners to the email and message inputs
+          emailInput.addEventListener("input", validateForm);
+          messageInput.addEventListener("input", validateForm);
+        
+          function hasAtAndDot(str) {
+          var pattern = /^[^@]+@[^.]+\..+$/;
+          return pattern.test(str);
+        }
+          // Function to check the form validity and enable/disable the submit button
+          function validateForm() {
+            var ema = document.getElementById("text2").value;
+            if (emailInput.validity.valid && messageInput.validity.valid && hasAtAndDot(ema)) {
+              submitButton.style.display = 'block';
+              formheading.style.display = 'none';
+            } else {
+              submitButton.style.display = 'none';
+              formheading.style.display = 'block';
+            }
+          }
+        
+          // Initial validation check
+          validateForm();
+        });
+             
+            </script>
         <script>
             // Your existing code for form validation
     
