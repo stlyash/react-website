@@ -44,7 +44,7 @@ export const Footer = () => {
         <div style={{ height: "1px", backgroundColor: "rgb(148, 168, 223)" }}></div>
         <span style={{ textAlign: "center", margin: "2%" }}>
           <Link rel="noopener noreferrer" target='_blank' style={{ color: "white" }} to="https://github.com/stlyash/react-website">
-            <strike>Copyright © 2023 Yashasvi</strike>😂
+            Copyright © 2023 Yashasvi
           </Link>
         </span>
         <div style={{ height: "1px", backgroundColor: "rgb(148, 168, 223)" }}></div>
